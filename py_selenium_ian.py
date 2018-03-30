@@ -11,7 +11,7 @@ input()
 friend_name = 'Mr Kelvin'
 elem = web.find_element_by_xpath('//span[contains(text(),{friend_name})]'.format(friend_name=friend_name))
 elem.click()
-elem1 = web.find_elements_by_class_name('input')
+elem1 = web.find_element_by_xpath("//div[@contenteditable='true']")
 while True:
-    elem1[1].send_keys('hahahahahahaha')
-    web.find_element_by_class_name('send-container').click()
+    elem1.send_keys('hahahahahahaha')
+    web.find_element_by_class_name("_2lkdt").click()
